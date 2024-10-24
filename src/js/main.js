@@ -35,6 +35,12 @@ function hexToRgb(hex) {
         return this.get(0).scrollHeight > this.height();
     }
 })(jQuery);
+function getCurrentMoth() {
+    const monthNames = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+        "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+    ];
+    return monthNames[new Date().getMonth()];
+}
 
 function reportWindowSize() {
     var device_width = window.innerWidth;

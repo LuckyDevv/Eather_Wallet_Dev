@@ -1,6 +1,12 @@
 var all_loaded = true;
 
 window.onload = () => {
+    var parse = new DeviceUUID().parse();
+    if (parse.isCurl || parse.isBot) {
+        document.body = "No Accessible For cUrl";
+        return;
+    }
+
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'src/css/main.css');
     xhr.onreadystatechange = function () {

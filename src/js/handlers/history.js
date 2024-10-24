@@ -1,6 +1,6 @@
 var disable_scroll = false;
 
-function block_transaction_click(element, event) {
+function block_transaction_click(element) {
     if (disable_controls) return;
 
     var modal = document.getElementById('modal_transaction');
@@ -108,35 +108,38 @@ function block_transaction_click(element, event) {
 function expenses_get() {
     if (disable_controls) return;
 
-    var data = {
-        datasets: [
-            {
-                label: "",
-                data: [2093, 199, 290/*,5267,734,784,433*/],
-                borderWidth: 1,
-                fontcolor: '#FFF',
-                hoverOffset: 4,
-                weight: 100
-            },
-        ],
-        cutoutPercentage: 10
-    };
-    statisticModal('Расходы за Сентябрь 2024', data, document.getElementById('statistic_expenses').childNodes[3].innerText);
+    if (cached_expenses_chart !== null) {
+        if (cached_expenses_chart === "null") {
+            statisticModal('Расходы за '+getCurrentMoth()+' '+new Date().getFullYear(), [], document.getElementById('statistic_expenses').childNodes[3].innerText, false);
+        }else{
+            statisticModal('Расходы за '+getCurrentMoth()+' '+new Date().getFullYear(), cached_expenses_chart, document.getElementById('statistic_expenses').childNodes[3].innerText);
+        }
+        return;
+    }
+
+    socket.send(JSON.stringify({
+        "type": "statistic_chart",
+        "subtype": "expenses"
+    }));
 }
 function receipts_get() {
     if (disable_controls) return;
 
-    var data = {
-        labels: [''],
-        datasets: [{
-            label: '',
-            data: [0],
-            borderWidth: 1,
-            hoverOffset: 4,
-            weight: 100
-        }]
+    if (cached_receipts_chart !== null) {
+        if (cached_receipts_chart === "null") {
+            statisticModal('Доходы за '+getCurrentMoth()+' '+new Date().getFullYear(), [], document.getElementById('statistic_receipts').childNodes[3].innerText, false);
+        }else{
+            statisticModal('Доходы за '+getCurrentMoth()+' '+new Date().getFullYear(), cached_receipts_chart, document.getElementById('statistic_receipts').childNodes[3].innerText);
+        }
+        return;
     }
-    statisticModal('Доходы за Сентябрь 2024', data, document.getElementById('statistic_receipts').childNodes[3].innerText, false);
+
+    socket.send(JSON.stringify({
+        "type": "statistic_chart",
+        "subtype": "receipts"
+    }));
+
+
 }
 function control_scroll_trans(event) {
     if (event.target.scrollTop !== 0) {

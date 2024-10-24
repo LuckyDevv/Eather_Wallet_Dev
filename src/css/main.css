@@ -405,6 +405,9 @@ metadata_transaction {
 .transaction-paid.receipt {
     color: rgb(17, 205, 77);
 }
+.transaction-name.receipt {
+    color: rgb(17, 205, 77);
+}
 
 .transaction-info .transaction-time {
     color: #a1a1a1;

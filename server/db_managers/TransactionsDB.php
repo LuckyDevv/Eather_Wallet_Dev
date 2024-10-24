@@ -8,6 +8,7 @@ date_default_timezone_set('Europe/Moscow');
 
 class TransactionsDB extends DB {
     public const array TYPES = [0 => "Перевод"];
+    public const array CATEGORIES = [0 => "Переводы"];
     public bool $die = false;
     public function __construct()
     {
@@ -61,6 +62,28 @@ class TransactionsDB extends DB {
             if ($transaction !== false && count($transaction) > 0) {
                 $result = $this->getArr($transaction, $user_id, $result);
             }
+        }catch(PDOException $e) {
+            $this->createLog("TransactionsDB", $e);
+        }
+        return $result;
+    }
+    public function getExpenses(int $user_id): array
+    {
+        $result = ["real_amount" => 0, "categories" => []];
+        try {
+            $prepare = $this->db->prepare("SELECT * FROM `transactions` WHERE `transaction_from_id`=:user_id;");
+            $result = $this->getResultStatistic($prepare, $user_id, $result);
+        }catch(PDOException $e) {
+            $this->createLog("TransactionsDB", $e);
+        }
+        return $result;
+    }
+    public function getReceipts(int $user_id): array
+    {
+        $result = ["real_amount" => 0, "categories" => []];
+        try {
+            $prepare = $this->db->prepare("SELECT * FROM `transactions` WHERE `transaction_to_id`=:user_id;");
+            $result = $this->getResultStatistic($prepare, $user_id, $result);
         }catch(PDOException $e) {
             $this->createLog("TransactionsDB", $e);
         }
@@ -162,11 +185,46 @@ class TransactionsDB extends DB {
             "to_id" => $transaction["transaction_to_id"],
             "to_name" => $transaction["transaction_to_name"],
             "sort" => $invert ? !((bool)$transaction["transaction_sort"]) : ((bool)$transaction["transaction_sort"]),
-            "sort_type" => $transaction["transaction_sort_type"],
+            "sort_type" => self::TYPES[$transaction["transaction_sort_type"]],
             "type" => $transaction["transaction_type"],
             "trans_name" => $transaction["transaction_name"],
             "timestamp" => $transaction["trans_time"]
         ];
+        return $result;
+    }
+
+    /**
+     * @param false|\PDOStatement $prepare
+     * @param int $user_id
+     * @param array $result
+     * @return array
+     */
+    public function getResultStatistic(false|\PDOStatement $prepare, int $user_id, array $result): array
+    {
+        $prepare->execute([":user_id" => $user_id]);
+        $search = $prepare->fetchAll(PDO::FETCH_ASSOC);
+        if ($search !== false && count($search) > 0) {
+            $last_type = -1;
+            $last_type_text = "";
+            $last_type_amount = 0;
+            $len = count($search);
+            $count = 0;
+            foreach ($search as $transaction) {
+                $count++;
+                $result["real_amount"] += floatval($transaction["transaction_amount"]);
+                if ($last_type != $transaction["transaction_sort_type"]) {
+                    if ($last_type !== -1) {
+                        $result["categories"][$last_type] = ["category_name" => $last_type_text, "amount" => $last_type_amount];
+                    }
+                    $last_type = $transaction["transaction_sort_type"];
+                    $last_type_text = self::CATEGORIES[$transaction["transaction_sort_type"]];
+                }
+                $last_type_amount += floatval($transaction["transaction_amount"]);
+                if ($len == $count) {
+                    $result["categories"][$last_type] = ["category_name" => $last_type_text, "amount" => $last_type_amount];
+                }
+            }
+        }
         return $result;
     }
 }

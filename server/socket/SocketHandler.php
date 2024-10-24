@@ -40,6 +40,7 @@ class SocketHandler implements MessageComponentInterface
     {
         $this->clients->detach($conn);
         $this->log("Клиент отключился: \e[0;33m".$conn->remoteAddress."\e[0m", self::DISCONNECTION);
+        unset($conn);
     }
 
     public function onError(ConnectionInterface $conn, \Exception $e)
@@ -53,6 +54,8 @@ class SocketHandler implements MessageComponentInterface
     2 - Successful send money
     3 - Send new transaction to history list
     4 - Send request to update balance
+    5 - Expenses statistic chart
+    6 - Receipts statistic chart
     */
     public function onMessage(ConnectionInterface $from, $msg): void
     {
@@ -158,6 +161,27 @@ class SocketHandler implements MessageComponentInterface
                         }else $this->sendMessage($from, "Не введён ID!", 5, true);
                     }else $this->sendMessage($from, "Вы не авторизованы!", 4, true);
                     break;
+                case "statistic_chart":
+                    if (isset($from->wallet_id)) {
+                        if (isset($decode["subtype"])) {
+                            if ($decode["subtype"] == "expenses") {
+                                if (!isset($from->expensesStat) || $from->expensesStat == "update") {
+                                    $expenses = (new TransactionsDB())->getExpenses($from->wallet_id);
+                                    $from->expensesStat = $expenses;
+                                    echo "Запрошено с базы данных (expenses)\n";
+                                }
+                                $this->sendMessage($from, json_encode($from->expensesStat, self::JSON_OPTIONS), 5, false);
+                            }elseif($decode["subtype"] == "receipts") {
+                                if (!isset($from->receiptsStat) || $from->receiptsStat == "update") {
+                                    $receipts = (new TransactionsDB())->getReceipts($from->wallet_id);
+                                    $from->receiptsStat = $receipts;
+                                    echo "Запрошено с базы данных (receipts)\n";
+                                }
+                                $this->sendMessage($from, json_encode($from->receiptsStat, self::JSON_OPTIONS), 6, false);
+                            }else $this->sendMessage($from, "Не", 16, true);
+                        }else $this->sendMessage($from, "Не", 15, true);
+                    }else $this->sendMessage($from, "Не", 14, true);
+                    break;
                 default:
                     $this->sendMessage($from, "Undefined operation type", 4, true);
                     break;
@@ -198,16 +222,13 @@ class SocketHandler implements MessageComponentInterface
         }
         return $clients;
     }
-    private function sendMessageByWalletId(int $wallet_id, string $message, int $code=0, bool $isError=false): bool
+    private function sendMessageByWalletId(int $wallet_id, string $message, int $code=0, bool $isError=false): void
     {
         $clients = $this->findClientsByWalletId($wallet_id);
         if (count($clients) > 0) {
             foreach ($clients as $client) {
                 $this->sendMessage($client, $message, $code, $isError);
             }
-            return true;
-        }else{
-            return false;
         }
     }
     private function findClientByUniqueId(int $unique_id)
@@ -222,6 +243,10 @@ class SocketHandler implements MessageComponentInterface
     }
     private function sendMessage(ConnectionInterface $connection, string $message, int $code=0, bool $isError=false): void
     {
+        if ($code == 3 || $code == 4) {
+            if (isset($connection->receiptsStat)) $connection->receiptsStat = "update";
+            if (isset($connection->expensesStat)) $connection->expensesStat = "update";
+        }
         $this->log("Отправлено сообщение: \e[1;34m«".$message."»\e[0m клиенту \e[0;33m".$connection->remoteAddress."\e[0m", self::RESPONSE);
         $type = $isError ? "error" : "response";
         $message = [

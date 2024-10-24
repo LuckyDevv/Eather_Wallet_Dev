@@ -64,7 +64,7 @@ class HistoryController extends Controller
                     'from' => $from_name,
                     'from_id' => $from_id,
                     't_id' => $transaction["trans_id"],
-                    't_type' => $transaction["type"],
+                    't_type' => $transaction["sort_type"],
                     'is_receipt' => $is_receipt,
                 ]);
             }
