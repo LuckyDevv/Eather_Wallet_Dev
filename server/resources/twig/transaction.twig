@@ -1,0 +1,23 @@
+<div class="block-transaction">
+    <img src="{{ path }}" class="transaction-image" alt="">
+    <div class="transaction" real_paid="{{ real_paid }}" currency="₽">
+        <div class="transaction-info">
+            <div class="transaction-name">{{ name|escape }}</div>
+            <div class="transaction-time">{{ date }}</div>
+        </div>
+        <div class="transaction-paid {receipt}">{{ amount }}</div>
+    </div>
+    <metadata_transaction style="display: none; opacity: 0; visibility: hidden">
+        <date>{{ date }}</date>
+        <name>{{ name|escape }}</name>
+        <paid>{{ amount }}</paid>
+        <wallet>{{ wallet }}</wallet>
+        <description>{{ description|escape }}</description>
+        <from>{{ from }}</from>
+        <from_id>{{ from_id }}</from_id>
+        <t_img>{{ path }}</t_img>
+        <t_id>{{ t_id }}</t_id>
+        <t_type>{{ t_type }}</t_type>
+        <is_receipt>{{ is_receipt }}</is_receipt>
+    </metadata_transaction>
+</div>

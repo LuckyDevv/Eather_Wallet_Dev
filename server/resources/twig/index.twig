@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="src/css/preloader.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="src/images/logo.png">
+    <title>EATHER Wallet</title>
+    <!-- META TAGS - OG & TWITTER -->
+    <meta name="description" content="EATHER Wallet - Это современный электронный кошелёк для платежей внутри экосистемы EATHER. Современный дизайн, удобство использования и эргономичность.">
+    <meta property="og:url" content="https://wallet.eather.ru/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EATHER Wallet">
+    <meta property="og:description" content="EATHER Wallet - Это современный электронный кошелёк для платежей внутри экосистемы EATHER. Современный дизайн, удобство использования и эргономичность.">
+    <meta property="og:image" content="https://wallet.eather.ru/src/images/logo-wallet.png">
+    <meta property="og:image:width" content="2712">
+    <meta property="og:image:height" content="1139">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="eather.ru">
+    <meta property="twitter:url" content="https://wallet.eather.ru/">
+    <meta name="twitter:title" content="EATHER Wallet">
+    <meta name="twitter:description" content="EATHER Wallet - Это современный электронный кошелёк для платежей внутри экосистемы EATHER. Современный дизайн, удобство использования и эргономичность.">
+    <meta name="twitter:image" content="https://wallet.eather.ru/src/images/logo-wallet.png">
+</head>
+<body>
+<div class="preloader" id="main_preloader">
+    <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+    </div>
+</div>
+<div id="modals">
+    <div class="modal news hide" id="modal_news" style="display: none">
+        <div class="swiper">
+            <span class="line"></span>
+        </div>
+        <div class="flex">
+            <center>
+                <img class="image" alt="" id="news-image">
+                <div class="title" id="news-title"></div>
+            </center>
+        </div>
+        <div class="description" id="news-description">
+
+        </div>
+    </div>
+    <div class="modal transaction hide" id="modal_transaction" style="display: none;">
+        <div class="swiper">
+            <span class="line"></span>
+        </div>
+        <div class="flex">
+            <center>
+                <div class="time" id="trans-time"></div>
+                <img class="image" alt="" id="trans-image" src="src/images/spotify.png">
+                <div class="name" id="trans-name"></div>
+                <div class="paid" id="trans-paid"></div>
+            </center>
+        </div>
+        <div class="description" id="trans-description">
+            <div class="title">Детали операции</div>
+            <div class="t_data" style="width: 100vw; position: absolute; overflow-y: auto; height: calc(100% + 30px)">
+                <div class="t_mtd">
+                    <div class="t_title">Счёт списания</div>
+                    <div class="t_desc"></div>
+                </div>
+                <div class="t_mtd">
+                    <div class="t_title">Тип платежа</div>
+                    <div class="t_desc"></div>
+                </div>
+                <div class="t_mtd">
+                    <div class="t_title">Комментарий к платежу</div>
+                    <div class="t_desc wrapword"></div>
+                </div>
+                <div class="t_mtd">
+                    <div class="t_title">Отправитель</div>
+                    <div class="t_desc wrapword"></div>
+                </div>
+                <div class="t_mtd">
+                    <div class="t_title">ID отправителя</div>
+                    <div class="t_desc"></div>
+                </div>
+                <div class="t_mtd">
+                    <div class="t_title">Идентификатор платежа</div>
+                    <div class="t_desc wrapword"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal statistic hide" id="modal_statistic" style="display: none">
+        <div class="swiper">
+            <span class="line"></span>
+        </div>
+        <div class="flex">
+            <div class="title" style="margin-top: 20px" id="ms_title"></div>
+            <div class="vtikk" style="display: flex; justify-content: center; align-items: center">
+                <canvas id="sdfsdfsdfsd" class="statistic_chart"></canvas>
+                <div class="amount" id="ms_amount" style="position: absolute; margin-top: 35px;"></div>
+            </div>
+            <img src="src/images/search_duck.png" class="empty_img" id="ms_empty">
+            <div class="empty_text" id="ms_empty_text">
+                За этот месяц вы не совершили ещё ни одной операции.<br><br>
+                Совершайте покупки и делайте переводы между кошельками внутри сети, чтобы статистика отображалась.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-main" id="content"  hidden="hidden" style="display: none;">
+    <div class="block-main" id="main-block">
+        {{ main_content }}
+    </div>
+    <div class="block-news" id="news-block">
+        <div class="block-news-title">
+            Новости и предложения
+        </div>
+        {{ news_list }}
+        <div class="block-news-end">
+            {{ news_stop_text }}
+        </div>
+    </div>
+    <div class="block-history" id="history-block" hidden="hidden">
+    </div>
+    <div class="block-swap" id="swap-block" hidden="hidden">
+        {{ contacts_content }}
+    </div>
+    <div class="block-notify" id="notify-block" hidden="hidden">
+
+    </div>
+    <div class="block-settings" id="settings-block" hidden="hidden">
+
+    </div>
+    <div class="block-navigation" id="block-navigation">
+        <div class="nav-nav" id="nav-home" onclick="setBlock(this.id);">
+            <img src="src/svg/home.svg" alt="">
+            <div class="nav-description">Главная</div>
+        </div>
+        <div class="nav-nav" id="nav-swap" onclick="setBlock(this.id);">
+            <img src="src/svg/money-send.svg" alt="">
+            <div class="nav-description">Переводы</div>
+        </div>
+        <div class="nav-nav" id="nav-history" onclick="setBlock(this.id);">
+            <img src="src/svg/history.svg" alt="">
+            <div class="nav-description">История</div>
+        </div>
+        <div class="nav-nav" id="nav-bell" onclick="setBlock(this.id);">
+            <img src="src/svg/bell.svg" alt="">
+            <div class="nav-description">Увед-ния</div>
+        </div>
+    </div>
+
+    <div class="block-new-contact" id="add_contact_block" hidden="hidden" style="display: none">
+        <div class="block-new-contact-title">Новый контакт</div>
+        <t class="notify-input-field" id="notify_contact_name_field" style="display: none"></t>
+        <form class="new-contact-form" autocomplete="off">
+            <input class="new-contact-input" autocomplete="off" required id="new_contact_name" type="text">
+            <label class="new-contact-label" for="new_contact_name">Введите имя контакта</label>
+        </form>
+        <t class="notify-input-field" id="notify_contact_id_field" style="display: none"></t>
+        <form class="new-contact-form" autocomplete="off">
+            <input class="new-contact-input" autocomplete="off" required id="new_contact_id" type="number">
+            <label class="new-contact-label" for="new_contact_id">Введите ID кошелька</label>
+        </form>
+        <button class="new-contact-button" id="new_contact_next" type="button">
+            <span class="new-contact-button-text" id="new_contact_button_text">Продолжить</span>
+        </button>
+
+        <button class="cancel-contact-button" id="cancel_contact_next" type="button">
+            <span class="cancel-contact-button-text" id="cancel_contact_button_text">Назад</span>
+        </button>
+    </div>
+
+    <div class="block-new-contact" id="transfer_step1_block" hidden="hidden" style="display: none">
+        <div class="block-new-contact-title">Перевод по ID</div>
+        <t class="notify-input-field" id="notify_transfer_id_step1" style="display: none"></t>
+        <form class="new-contact-form" autocomplete="off">
+            <input class="new-contact-input" autocomplete="off" required id="transfer_step1_id" type="number">
+            <label class="new-contact-label" for="transfer_step1_id">Введите ID кошелька</label>
+        </form>
+        <button class="new-contact-button" id="transfer_step1_button" type="button">
+            <span class="new-contact-button-text" id="transfer_step1_button_text">Далее</span>
+        </button>
+
+        <button class="cancel-contact-button" id="cancel_transfer_step1" type="button">
+            <span class="cancel-contact-button-text" id="cancel_transfer_step1_button_text">Назад</span>
+        </button>
+    </div>
+
+    <div class="block-new-contact" id="transfer_step2_block" hidden="hidden" style="display: none">
+        <div class="block-new-contact-title">Перевод по ID</div>
+        <t class="notify-input-field" id="notify_transfer_name_step2" style="display: none"></t>
+        <form class="new-contact-form" autocomplete="off">
+            <input class="new-contact-input" autocomplete="off" disabled id="transfer_step2_name" type="text">
+            <label class="new-contact-label" for="transfer_step2_name">Получатель</label>
+        </form>
+        <t class="notify-input-field" id="notify_transfer_amount_step2" style="display: none"></t>
+        <form class="new-contact-form" autocomplete="off">
+            <input class="new-contact-input" autocomplete="off" required id="transfer_step2_amount" type="number">
+            <label class="new-contact-label" for="transfer_step2_amount">Сумма перевода, ₽</label>
+        </form>
+        <t class="notify-input-field-2" id="money_transfer_available">Доступно: <span id="money-available-span">0,00 ₽</span></t>
+        <t class="notify-input-field" id="notify_transfer_comment_step2" style="display: none"></t>
+        <form class="new-contact-form" autocomplete="off">
+            <input class="new-contact-input" autocomplete="off" required id="transfer_step2_comment" type="text">
+            <label class="new-contact-label" for="transfer_step2_comment">Комменатрий (не обязательно)</label>
+        </form>
+        <t class="notify-input-field-2" id="money_transfer_available">Внимательно проверьте все данные перед тем, как совершить платёж. После оплаты вернуть деньги будет невозможно.</t>
+        <button class="new-contact-button" id="transfer_step2_button" type="button">
+            <span class="new-contact-button-text" id="transfer_step2_button_text">Продолжить</span>
+        </button>
+
+        <button class="cancel-contact-button" id="cancel_transfer_step2" type="button">
+            <span class="cancel-contact-button-text" id="cancel_transfer_step2_button_text">Назад</span>
+        </button>
+    </div>
+
+    <div class="block-new-contact" id="transfer_success" hidden="hidden" style="display: none;">
+        <svg version="1.1" id="transfer_success_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 100 100" style="position: absolute; top: 50%; transform: translate(0, -50%); transition: all 1s ease" xml:space="preserve" preserveAspectRatio="xMidYMid meet" width="150px" height="150px">
+            <g>
+                <circle class="circle" cx="50" cy="49.9999657" r="47.5"/>
+                <circle class="circle-dash" cx="50" cy="49.9999657" r="47.5"/>
+                <polyline class="check" points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562 	"/>
+                <polyline class="check-dash" points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562 	"/>
+            </g>
+        </svg>
+        <div class="block-new-contact-title" id="tr_sc_title" style=" opacity: 0">Перевод выполнен</div>
+        <div class="block-new-contact-title" id="tr_sc_amount" style="margin-top: 10px; font-size: 30px; opacity: 0">- ₽</div>
+        <div class="block-new-contact-description" id="tr_sc_desc" style="width: 85%; opacity: 0">
+            <div class="t_data">
+                <div class="t_mtd" id="trsc_ss_parent">
+                    <div class="t_title">Счёт списания</div>
+                    <div class="t_desc" id="trsc_ss"></div>
+                </div>
+                <div class="t_mtd wrapword" id="trsc_cm_parent">
+                    <div class="t_title">Комментарий к платежу</div>
+                    <div class="t_desc" id="trsc_cm"></div>
+                </div>
+                <div class="t_mtd wrapword" id="trsc_np_parent">
+                    <div class="t_title">Получатель</div>
+                    <div class="t_desc" id="trsc_np"></div>
+                </div>
+                <div class="t_mtd" id="trsc_ip_parent">
+                    <div class="t_title">ID получателя</div>
+                    <div class="t_desc" id="trsc_ip"></div>
+                </div>
+                <div class="t_mtd wrapword" id="trsc_it_parent">
+                    <div class="t_title">Идентификатор платежа</div>
+                    <div class="t_desc" id="trsc_it"></div>
+                </div>
+            </div>
+        </div>
+        <button class="new-contact-button" id="transfer_success_button" type="button" style="opacity: 0; position: fixed; bottom: 20px;">
+            <span class="new-contact-button-text" id="transfer_success_button_text">Закрыть</span>
+        </button>
+    </div>
+</div>
+
+<div class="no-support-device" hidden id="no-support" style="display: none;">
+    <div class="no-support-container">
+        <div class="no-support-message">
+            <img src="src/images/cry_duck.gif" alt="">
+            <div>
+                Извините, наше приложение не поддерживается на вашем устройстве :(
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="js">
+    <script src="src/js/libs/jquery.min.js"></script>
+    <script src="src/js/libs/imgcolr.html5.min.js"></script>
+    <script src="https://www.cbr-xml-daily.ru/money.js"></script>
+    <script src="src/js/libs/chart.min.js"></script>
+    <script src="src/js/libs/device-uuid.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/socket.js"></script>
+    <script src="src/js/loader.js"></script>
+</div>
+</body>

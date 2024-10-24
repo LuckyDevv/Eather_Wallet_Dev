@@ -1,0 +1,22 @@
+<div class="block-hello">
+    <div class="account_page" id="account_page">
+        <img class="user-avatar" src="{{ user_avatar }}" alt="user_avatar">
+        <div>
+            <div class="user-name">{{ user_name }},</div>
+            <div class="user-hello">Добро пожаловать!</div>
+        </div>
+    </div>
+    <div style="margin-right: 15px;">
+        <div class="block-currency" id="currency-change">
+            <span id="current-currency-name">RUB</span>
+            <img src="src/images/rub.jpg" id="current-currency-image" class="currency-image" alt="currency_image">
+        </div>
+    </div>
+</div>
+<div class="block-balance">
+
+    <div class="block-money" id="block_money">
+        <span id="money-currency" class="span-money-currency">₽</span>
+        <span id="money-balance" real_balance="{{ real_balance }}">{{ real_balance|number_format(2, '<span class="span-money-currency">,', ' ') }}</span>
+    </div>
+</div>

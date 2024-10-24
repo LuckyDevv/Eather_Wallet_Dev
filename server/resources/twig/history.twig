@@ -1,0 +1,47 @@
+<div style="display: flex; justify-content: center;">
+    <div class="block-transfer-title">История операций</div>
+</div>
+
+<div class="transaction-search">
+    <div class="search-block">
+        <input id="transaction-search" placeholder="Поиск операции">
+    </div>
+</div>
+
+<div class="history-statistic">
+    <div id="statistic_expenses" class="statistic expenses" real_expenses="{{ real_expenses }}" currency="rub">
+        <div class="title">
+            Расходы за {{ month }}
+        </div>
+        <div class="total">
+            ₽ {{ real_expenses|number_format(2, ',', ' ') }}
+        </div>
+        <div class="line">
+
+        </div>
+    </div>
+    <div id="statistic_receipts" class="statistic receipts" real_receipts="{{ real_receipts }}" currency="rub">
+        <div class="title">
+            Доходы за {{ month }}
+        </div>
+        <div class="total">
+            ₽ {{ real_receipts|number_format(2, ',', ' ') }}
+        </div>
+        <div class="line">
+
+        </div>
+    </div>
+</div>
+
+<div class="block-history-title">
+    <div class="history-title">
+        История операций
+    </div>
+    <span class="history-settings"></span>
+</div>
+<div class="block-transactions" id="block_transactions_">
+{{ transactions }}
+</div>
+<div style="display: flex !important; justify-content: center !important">
+    <div class="transfer-list-end">{{ stop_text }}</div>
+</div>

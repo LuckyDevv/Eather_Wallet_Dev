@@ -1,0 +1,596 @@
+[24.10.2024 19:38:46] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:39:07] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:39:07] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:39:07] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:39:28] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:39:34] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:39:34] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:39:34] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:40:00] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:40:00] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:40:00] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:40:00] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:40:16] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:40:17] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:40:17] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:40:17] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:40:31] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:40:32] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:40:32] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:40:32] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:40:41] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:40:42] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:40:42] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:40:42] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:41:00] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:41:00] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:41:00] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:41:00] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:41:24] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:41:25] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:41:25] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:41:25] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:41:34] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:41:34] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:41:34] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:41:34] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:42:03] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:42:04] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:42:04] [Response] - Отправлено сообщение: «Hello, User (127.0.0.1)!» клиенту 127.0.0.1
+[24.10.2024 19:42:04] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:42:11] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:42:29] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:42:29] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:42:29] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:42:47] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:42:47] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:42:47] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:44:05] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:44:05] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:44:05] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:44:05] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:44:07] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:44:07] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:44:07] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:44:08] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:49:12] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:49:12] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:49:12] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:49:32] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:49:34] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:49:34] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:49:34] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:50:22] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:50:22] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:50:22] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:50:22] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:50:33] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:50:33] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:50:33] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:50:33] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:51:02] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:51:03] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:51:03] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:51:03] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:52:17] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:52:24] [Message] - Сообщение от 127.0.0.1: «vtikk»
+[24.10.2024 19:52:24] [Response] - Отправлено сообщение: «Не удалось распознать втикк» клиенту 127.0.0.1
+[24.10.2024 19:53:20] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:53:20] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:53:21] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:53:21] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:53:21] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:53:27] [Message] - Сообщение от 127.0.0.1: «huesus»
+[24.10.2024 19:53:27] [Response] - Отправлено сообщение: «Не удалось распознать втикк» клиенту 127.0.0.1
+[24.10.2024 19:54:42] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:54:43] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:54:43] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:54:43] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 19:59:55] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 19:59:56] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 19:59:56] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 19:59:56] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 20:00:03] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:00:15] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:00:15] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:00:15] [Response] - Отправлено сообщение: «Молодец nah» клиенту 127.0.0.1
+[24.10.2024 20:36:41] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:36:41] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:36:41] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:49:00] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:49:01] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:49:01] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:49:01] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:49:53] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:49:53] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:49:53] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:50:04] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":10,"comment":""}»
+[24.10.2024 20:50:47] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:50:47] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:50:47] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:50:50] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:50:50] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:50:50] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:50:50] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:50:55] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":5,"comment":""}»
+[24.10.2024 20:51:38] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:51:39] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:51:39] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:51:39] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:51:43] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":5,"comment":""}»
+[24.10.2024 20:51:57] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:51:57] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:51:57] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:51:59] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:51:59] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:51:59] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:51:59] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:53:06] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:53:07] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:53:07] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:53:07] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:53:09] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":5,"comment":""}»
+[24.10.2024 20:53:12] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:53:13] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:53:13] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:53:13] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:56:07] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:56:07] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:56:07] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:56:07] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:56:10] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:56:10] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:56:10] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:56:10] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:56:13] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":5,"comment":""}»
+[24.10.2024 20:56:39] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:56:39] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:56:39] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:56:41] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:56:42] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:56:42] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:56:42] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:56:45] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":5,"comment":""}»
+[24.10.2024 20:57:06] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:57:06] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:57:06] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:57:08] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 20:57:08] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:57:08] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:57:08] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:57:23] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":5,"comment":""}»
+[24.10.2024 20:58:23] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 20:58:23] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 20:58:23] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 20:58:27] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":5,"comment":""}»
+[24.10.2024 21:00:38] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:00:38] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:00:38] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:00:40] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:00:41] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:00:41] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:00:41] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:00:44] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":5,"comment":""}»
+[24.10.2024 21:00:44] [Response] - Отправлено сообщение: «{
+    "transaction_id": "14f421533b1a9e2f1f5d75dbeec111",
+    "amount": 5,
+    "from_id": 1,
+    "to_id": 3,
+    "to_name": "Артемио",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:00:44] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"5\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:00<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 5,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:00<\/date>\n        <name>Перевод<\/name>\n        <paid>- 5,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Артемио<\/from>\n        <from_id>3<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>14f421533b1a9e2f1f5d75dbeec111<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 5,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:00:44] [Response] - Отправлено сообщение: «{
+    "amount": -5
+}» клиенту 127.0.0.1
+[24.10.2024 21:00:53] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":10,"comment":""}»
+[24.10.2024 21:00:53] [Response] - Отправлено сообщение: «{
+    "transaction_id": "671bdb766a94e179ac156fca1510cb",
+    "amount": 10,
+    "from_id": 1,
+    "to_id": 3,
+    "to_name": "Артемио",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:00:53] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"10\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:00<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 10,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:00<\/date>\n        <name>Перевод<\/name>\n        <paid>- 10,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Артемио<\/from>\n        <from_id>3<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>671bdb766a94e179ac156fca1510cb<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 10,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:00:53] [Response] - Отправлено сообщение: «{
+    "amount": -10
+}» клиенту 127.0.0.1
+[24.10.2024 21:03:24] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:03:24] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:03:24] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:03:24] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:03:29] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":10,"comment":""}»
+[24.10.2024 21:03:29] [Response] - Отправлено сообщение: «{
+    "transaction_id": "6bb184a961155fe88e27989f123e87",
+    "amount": 10,
+    "from_id": 1,
+    "to_id": 3,
+    "to_name": "Артемио",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:03:29] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"10\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:03<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 10,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:03<\/date>\n        <name>Перевод<\/name>\n        <paid>- 10,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Артемио<\/from>\n        <from_id>3<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>6bb184a961155fe88e27989f123e87<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 10,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:03:29] [Response] - Отправлено сообщение: «{
+    "amount": -10
+}» клиенту 127.0.0.1
+[24.10.2024 21:03:38] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":15,"comment":""}»
+[24.10.2024 21:03:38] [Response] - Отправлено сообщение: «{
+    "transaction_id": "ea9c372e1f8bdee33206c45db371c6",
+    "amount": 15,
+    "from_id": 1,
+    "to_id": 3,
+    "to_name": "Артемио",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:03:38] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"15\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:03<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 15,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:03<\/date>\n        <name>Перевод<\/name>\n        <paid>- 15,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Артемио<\/from>\n        <from_id>3<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>ea9c372e1f8bdee33206c45db371c6<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 15,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:03:38] [Response] - Отправлено сообщение: «{
+    "amount": -15
+}» клиенту 127.0.0.1
+[24.10.2024 21:04:25] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:04:26] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:04:26] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:04:26] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:04:30] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":15,"comment":""}»
+[24.10.2024 21:04:30] [Response] - Отправлено сообщение: «{
+    "transaction_id": "63bc6aaeff3f30658f2a40b9542be0",
+    "amount": 15,
+    "from_id": 1,
+    "to_id": 3,
+    "to_name": "Артемио",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:04:30] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"15\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:04<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 15,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:04<\/date>\n        <name>Перевод<\/name>\n        <paid>- 15,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Артемио<\/from>\n        <from_id>3<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>63bc6aaeff3f30658f2a40b9542be0<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 15,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:04:30] [Response] - Отправлено сообщение: «{
+    "amount": -15
+}» клиенту 127.0.0.1
+[24.10.2024 21:04:59] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:05:00] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:05:00] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:05:00] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:09:40] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:09:40] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"7cf17c82b9fa3ab13b342ed719671542820898ce3a4a38bce85d14a18333d7d0","uuid":"d520c7a8-421b-4563-b955-f5abc56b97ec"}»
+[24.10.2024 21:09:40] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:10:53] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"4","amount":10,"comment":""}»
+[24.10.2024 21:10:53] [Response] - Отправлено сообщение: «{
+    "transaction_id": "240fadfcf105cc5922d4d5e536912f",
+    "amount": 10,
+    "from_id": 1,
+    "to_id": 4,
+    "to_name": "Втиканый",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:10:53] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"10\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:10<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 10,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:10<\/date>\n        <name>Перевод<\/name>\n        <paid>- 10,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>240fadfcf105cc5922d4d5e536912f<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 10,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:10:53] [Response] - Отправлено сообщение: «{
+    "amount": -10
+}» клиенту 127.0.0.1
+[24.10.2024 21:10:53] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"10\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:10<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 10,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:10<\/date>\n        <name>Перевод<\/name>\n        <paid>- 10,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>240fadfcf105cc5922d4d5e536912f<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 10,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:10:53] [Response] - Отправлено сообщение: «{
+    "amount": 10
+}» клиенту 127.0.0.1
+[24.10.2024 21:11:33] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:11:33] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:11:33] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"7cf17c82b9fa3ab13b342ed719671542820898ce3a4a38bce85d14a18333d7d0","uuid":"d520c7a8-421b-4563-b955-f5abc56b97ec"}»
+[24.10.2024 21:11:33] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:11:37] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":10,"comment":""}»
+[24.10.2024 21:11:37] [Response] - Отправлено сообщение: «{
+    "transaction_id": "c6cc7ea7151ef6584d15ea1eeeb0cc",
+    "amount": 10,
+    "from_id": 1,
+    "to_id": 3,
+    "to_name": "Артемио",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:11:37] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"10\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:11<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 10,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:11<\/date>\n        <name>Перевод<\/name>\n        <paid>- 10,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Артемио<\/from>\n        <from_id>3<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>c6cc7ea7151ef6584d15ea1eeeb0cc<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 10,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:11:37] [Response] - Отправлено сообщение: «{
+    "amount": -10
+}» клиенту 127.0.0.1
+[24.10.2024 21:12:26] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:12:27] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:12:27] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"7cf17c82b9fa3ab13b342ed719671542820898ce3a4a38bce85d14a18333d7d0","uuid":"d520c7a8-421b-4563-b955-f5abc56b97ec"}»
+[24.10.2024 21:12:27] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:12:37] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"4","amount":10,"comment":""}»
+[24.10.2024 21:12:37] [Response] - Отправлено сообщение: «{
+    "transaction_id": "eda488f3eb1caa7a7f54ddabb93ed1",
+    "amount": 10,
+    "from_id": 1,
+    "to_id": 4,
+    "to_name": "Втиканый",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:12:37] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"10\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:12<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 10,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:12<\/date>\n        <name>Перевод<\/name>\n        <paid>- 10,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>eda488f3eb1caa7a7f54ddabb93ed1<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 10,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:12:37] [Response] - Отправлено сообщение: «{
+    "amount": -10
+}» клиенту 127.0.0.1
+[24.10.2024 21:12:37] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"10\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:12<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 10,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:12<\/date>\n        <name>Перевод<\/name>\n        <paid>- 10,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>eda488f3eb1caa7a7f54ddabb93ed1<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 10,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:12:37] [Response] - Отправлено сообщение: «{
+    "amount": 10
+}» клиенту 127.0.0.1
+[24.10.2024 21:13:14] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"3","amount":15,"comment":""}»
+[24.10.2024 21:13:14] [Response] - Отправлено сообщение: «{
+    "transaction_id": "4ed9a11fb2145a56537e70c51a0256",
+    "amount": 15,
+    "from_id": 1,
+    "to_id": 3,
+    "to_name": "Артемио",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:13:14] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"15\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:13<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 15,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:13<\/date>\n        <name>Перевод<\/name>\n        <paid>- 15,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Артемио<\/from>\n        <from_id>3<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>4ed9a11fb2145a56537e70c51a0256<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 15,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:13:14] [Response] - Отправлено сообщение: «{
+    "amount": -15
+}» клиенту 127.0.0.1
+[24.10.2024 21:13:19] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"4","amount":15,"comment":""}»
+[24.10.2024 21:13:19] [Response] - Отправлено сообщение: «{
+    "transaction_id": "76ba982c336a198fa8087800e425c8",
+    "amount": 15,
+    "from_id": 1,
+    "to_id": 4,
+    "to_name": "Втиканый",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:13:19] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"15\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:13<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 15,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:13<\/date>\n        <name>Перевод<\/name>\n        <paid>- 15,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>76ba982c336a198fa8087800e425c8<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 15,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:13:19] [Response] - Отправлено сообщение: «{
+    "amount": -15
+}» клиенту 127.0.0.1
+[24.10.2024 21:13:19] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"15\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:13<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 15,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:13<\/date>\n        <name>Перевод<\/name>\n        <paid>- 15,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>76ba982c336a198fa8087800e425c8<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 15,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:13:19] [Response] - Отправлено сообщение: «{
+    "amount": 15
+}» клиенту 127.0.0.1
+[24.10.2024 21:14:35] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:14:35] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:14:35] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:14:35] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:14:35] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"7cf17c82b9fa3ab13b342ed719671542820898ce3a4a38bce85d14a18333d7d0","uuid":"d520c7a8-421b-4563-b955-f5abc56b97ec"}»
+[24.10.2024 21:14:35] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:15:03] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:15:04] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:15:04] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"7cf17c82b9fa3ab13b342ed719671542820898ce3a4a38bce85d14a18333d7d0","uuid":"d520c7a8-421b-4563-b955-f5abc56b97ec"}»
+[24.10.2024 21:15:04] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:15:04] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:15:05] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:15:05] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:15:05] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:15:16] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"4","amount":40,"comment":""}»
+[24.10.2024 21:15:16] [Response] - Отправлено сообщение: «{
+    "transaction_id": "e49d60ebe60aaee4b2ef79008e5fe9",
+    "amount": 40,
+    "from_id": 1,
+    "to_id": 4,
+    "to_name": "Втиканый",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:15:16] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"40\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:15<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 40,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:15<\/date>\n        <name>Перевод<\/name>\n        <paid>- 40,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>e49d60ebe60aaee4b2ef79008e5fe9<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 40,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:15:16] [Response] - Отправлено сообщение: «{
+    "amount": -40
+}» клиенту 127.0.0.1
+[24.10.2024 21:15:16] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"40\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:15<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">+ 40,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:15<\/date>\n        <name>Перевод<\/name>\n        <paid>+ 40,00 ₽<\/paid>\n        <wallet>4<\/wallet>\n        <description><\/description>\n        <from>Александр<\/from>\n        <from_id>1<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>e49d60ebe60aaee4b2ef79008e5fe9<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>true<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 0,
+        "receipts": 40
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:15:16] [Response] - Отправлено сообщение: «{
+    "amount": 40
+}» клиенту 127.0.0.1
+[24.10.2024 21:16:09] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:16:09] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:16:09] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:16:09] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:16:10] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:16:10] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:16:10] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"7cf17c82b9fa3ab13b342ed719671542820898ce3a4a38bce85d14a18333d7d0","uuid":"d520c7a8-421b-4563-b955-f5abc56b97ec"}»
+[24.10.2024 21:16:10] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:16:21] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"4","amount":500,"comment":""}»
+[24.10.2024 21:16:21] [Response] - Отправлено сообщение: «{
+    "transaction_id": "4549c4dfd662f6308db26cb5b6e212",
+    "amount": 500,
+    "from_id": 1,
+    "to_id": 4,
+    "to_name": "Втиканый",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:16:21] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"500\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:16<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 500,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:16<\/date>\n        <name>Перевод<\/name>\n        <paid>- 500,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>4549c4dfd662f6308db26cb5b6e212<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 500,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:16:21] [Response] - Отправлено сообщение: «{
+    "amount": -500
+}» клиенту 127.0.0.1
+[24.10.2024 21:16:21] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"500\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:16<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">+ 500,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:16<\/date>\n        <name>Перевод<\/name>\n        <paid>+ 500,00 ₽<\/paid>\n        <wallet>4<\/wallet>\n        <description><\/description>\n        <from>Александр<\/from>\n        <from_id>1<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>4549c4dfd662f6308db26cb5b6e212<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>true<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 0,
+        "receipts": 500
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:16:21] [Response] - Отправлено сообщение: «{
+    "amount": 500
+}» клиенту 127.0.0.1
+[24.10.2024 21:16:41] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:16:41] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:16:41] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:16:41] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:16:57] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:16:57] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:16:57] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"ac11abe4486782d2eceb85175000c4a1f153568b2eb3e24866ff55fff53751fb","uuid":"a988f29d-1d5b-4515-b821-954e1b76fc63"}»
+[24.10.2024 21:16:57] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:16:59] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:16:59] [Connection] - Новое подключение: 127.0.0.1
+[24.10.2024 21:16:59] [Message] - Сообщение от 127.0.0.1: «{"type":"auth","session_id":"7cf17c82b9fa3ab13b342ed719671542820898ce3a4a38bce85d14a18333d7d0","uuid":"d520c7a8-421b-4563-b955-f5abc56b97ec"}»
+[24.10.2024 21:16:59] [Response] - Отправлено сообщение: «Successful authorize!» клиенту 127.0.0.1
+[24.10.2024 21:17:10] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"1","amount":1591,"comment":""}»
+[24.10.2024 21:17:10] [Response] - Отправлено сообщение: «{
+    "transaction_id": "ce2e99c3a0ae59dbca57e1d868edae",
+    "amount": 1591,
+    "from_id": 4,
+    "to_id": 1,
+    "to_name": "Александр",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:10] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"1591\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:17<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 1 591,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:17<\/date>\n        <name>Перевод<\/name>\n        <paid>- 1 591,00 ₽<\/paid>\n        <wallet>4<\/wallet>\n        <description><\/description>\n        <from>Александр<\/from>\n        <from_id>1<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>ce2e99c3a0ae59dbca57e1d868edae<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 1591,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:10] [Response] - Отправлено сообщение: «{
+    "amount": -1591
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:10] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"1591\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:17<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">+ 1 591,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:17<\/date>\n        <name>Перевод<\/name>\n        <paid>+ 1 591,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>ce2e99c3a0ae59dbca57e1d868edae<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>true<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 0,
+        "receipts": 1591
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:10] [Response] - Отправлено сообщение: «{
+    "amount": 1591
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:28] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"4","amount":791,"comment":""}»
+[24.10.2024 21:17:28] [Response] - Отправлено сообщение: «{
+    "transaction_id": "53b2a149fbf3fc1538c6a11368c706",
+    "amount": 791,
+    "from_id": 1,
+    "to_id": 4,
+    "to_name": "Втиканый",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:28] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"791\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:17<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 791,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:17<\/date>\n        <name>Перевод<\/name>\n        <paid>- 791,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>53b2a149fbf3fc1538c6a11368c706<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 791,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:28] [Response] - Отправлено сообщение: «{
+    "amount": -791
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:28] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"791\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:17<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">+ 791,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:17<\/date>\n        <name>Перевод<\/name>\n        <paid>+ 791,00 ₽<\/paid>\n        <wallet>4<\/wallet>\n        <description><\/description>\n        <from>Александр<\/from>\n        <from_id>1<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>53b2a149fbf3fc1538c6a11368c706<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>true<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 0,
+        "receipts": 791
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:28] [Response] - Отправлено сообщение: «{
+    "amount": 791
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:39] [Message] - Сообщение от 127.0.0.1: «{"type":"transfer","id":"1","amount":91,"comment":""}»
+[24.10.2024 21:17:39] [Response] - Отправлено сообщение: «{
+    "transaction_id": "3e0b24ca2e1409e630032b9c0544ad",
+    "amount": 91,
+    "from_id": 4,
+    "to_id": 1,
+    "to_name": "Александр",
+    "comment": ""
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:39] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"91\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:17<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">- 91,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:17<\/date>\n        <name>Перевод<\/name>\n        <paid>- 91,00 ₽<\/paid>\n        <wallet>4<\/wallet>\n        <description><\/description>\n        <from>Александр<\/from>\n        <from_id>1<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>3e0b24ca2e1409e630032b9c0544ad<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>false<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 91,
+        "receipts": 0
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:39] [Response] - Отправлено сообщение: «{
+    "amount": -91
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:39] [Response] - Отправлено сообщение: «{
+    "transaction": {
+        "transaction": "<div class=\"block-transaction\">\n    <img src=\"src\/images\/user.jpg\" class=\"transaction-image\" alt=\"\">\n    <div class=\"transaction\" real_paid=\"91\" currency=\"₽\">\n        <div class=\"transaction-info\">\n            <div class=\"transaction-name\">Перевод<\/div>\n            <div class=\"transaction-time\">24.10.2024 21:17<\/div>\n        <\/div>\n        <div class=\"transaction-paid {receipt}\">+ 91,00 ₽<\/div>\n    <\/div>\n    <metadata_transaction style=\"display: none; opacity: 0; visibility: hidden\">\n        <date>24.10.2024 21:17<\/date>\n        <name>Перевод<\/name>\n        <paid>+ 91,00 ₽<\/paid>\n        <wallet>1<\/wallet>\n        <description><\/description>\n        <from>Втиканый<\/from>\n        <from_id>4<\/from_id>\n        <t_img>src\/images\/user.jpg<\/t_img>\n        <t_id>3e0b24ca2e1409e630032b9c0544ad<\/t_id>\n        <t_type>0<\/t_type>\n        <is_receipt>true<\/is_receipt>\n    <\/metadata_transaction>\n<\/div>",
+        "expenses": 0,
+        "receipts": 91
+    }
+}» клиенту 127.0.0.1
+[24.10.2024 21:17:39] [Response] - Отправлено сообщение: «{
+    "amount": 91
+}» клиенту 127.0.0.1
+[24.10.2024 21:22:27] [Disconnection] - Клиент отключился: 127.0.0.1
+[24.10.2024 21:22:30] [Disconnection] - Клиент отключился: 127.0.0.1

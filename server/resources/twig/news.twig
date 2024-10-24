@@ -1,0 +1,16 @@
+{% for news_info in news %}
+    <div class="item-news">
+        <img class="item-news-image" alt="" src="{{ news_info.image }}">
+        <div class="item-news-about">
+            <div class="item-news-title">
+                {{ news_info.title|escape }}
+            </div>
+            <div class="item-news-description">
+                {% set twig_content = news_info.description|escape %}
+                {% set twig_search = "\n" %}
+                {% set twig_replace = "<br /><span class='br'></span>" %}
+                {{ twig_content|replace({ (twig_search): twig_replace }) }}
+            </div>
+        </div>
+    </div>
+{% endfor %}

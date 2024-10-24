@@ -1,0 +1,1241 @@
+@import url('src/fonts/sf-ui/san_francisco.css');
+@import url('src/fonts/sf-ui/san_francisco.css');
+@font-face {
+    font-family: 'Glyphter';
+    src: url('src/fonts/glyphter-font/fonts/Glyphter.eot');
+    src: url('src/fonts/glyphter-font/fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+    url('src/fonts/glyphter-font/fonts/Glyphter.woff') format('woff'),
+    url('src/fonts/glyphter-font/fonts/Glyphter.ttf') format('truetype'),
+    url('src/fonts/glyphter-font/fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(30, 34, 37);
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: 'SF UI Display Bold', sans-serif;
+    -ms-overflow-style: none;
+}
+
+metadata_transaction {
+    display: none;
+}
+
+#toast-container>div {
+    opacity: 1 !important;
+    -ms-filter: alpha(Opacity=100) !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.toast-message {
+    font-family: 'SF UI Display Light', sans-serif;
+}
+
+
+*::-webkit-scrollbar {
+    width: 3px !important;
+    color: #fff;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;        /* цвет дорожки */
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(120, 120, 120, 0.6);;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 3px solid rgba(120, 120, 120, 0.6);;  /* padding вокруг плашки */
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-main {
+    padding-bottom: 75px;
+}
+.block-main {
+    position: relative;
+    background:
+            radial-gradient(49% 81% at 45% 47%, #cbf997 32%, #073AFF00 100%),
+            radial-gradient(142% 91% at 83% 7%, #8ad756 35%, #FF000000 99%),
+            radial-gradient(113% 91% at 17% -2%, #cbf997 69%, #FF000000 99%),
+            radial-gradient(142% 91% at -6% 74%, #e4fe46 2%, #FF000000 99%),
+            radial-gradient(142% 91% at 111% 84%, #cbf997 30%, #FF0000FF 98%);
+    border-radius: 0 0 30px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.block-hello {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'SF UI Display Heavy', sans-serif;
+    font-size: 27px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.account_page {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.block-hello .user-avatar {
+    border-radius: 25%;
+    width: 50px;
+    height: 50px;
+}
+.block-hello .user-name {
+    font-size: 18px;
+    margin-left: 7px;
+}
+.block-hello .user-hello {
+    font-family: "SF UI Display Regular", sans-serif;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.block-balance {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.block-currency {
+    overflow-y: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: 'SF UI Text Bold', sans-serif;
+    padding: 5px 10px;
+    width: fit-content;
+    font-size: 17px !important;
+    background: rgba(46, 49, 54, 0.8);
+    border-radius: 80px;
+    transition: .22s ease all;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(81, 90, 62, 0.9);
+    font-size: 16px !important;
+    overflow: auto;
+    z-index: 1001;
+    max-height: 175px;
+    border-radius: 0 0 20px 20px;
+    animation: show_content 0.2s ease;
+}
+
+.dropdown-content .block-currency-dropdown {
+    display: flex;
+    font-family: 'SF UI Text Bold', sans-serif;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(81, 90, 62, 0.9);
+}
+
+.border-bottom-1 {
+    border-bottom: 1px solid #636363;
+}
+
+.currency-image {
+    margin-left: 7px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+.block-money {
+    margin-top: 7px;
+    font-size: 50px;
+    font-family: 'SF UI Display Black', sans-serif;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.span-money-currency {
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 0;
+    font-size: 30px;
+}
+
+.block-money-notify {
+    color: rgba(54, 85, 61, 0.8);
+    font-size: 17px;
+    font-family: 'SF UI Display Medium', sans-serif;
+}
+
+.block-news {
+    font-family: "SF UI Display Semibold", sans-serif;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+.block-news-title {
+    font-size: 19px;
+    margin-left: 10px;
+}
+.item-news {
+    cursor: pointer;
+    height: 120px;
+    padding: 10px;
+    margin: 10px 7px 7px;
+    border-radius: 16px;
+    background-color: rgba(115, 117, 117, 0.4);
+    display: flex;
+}
+.item-news-image {
+    border-radius: 16px;
+    height: 100%;
+    min-width: 130px !important;
+    max-width: 130px !important;
+    width: 130px !important;
+}
+.item-news-about {
+    margin-left: 15px;
+    width: 100%;
+}
+.item-news-title {
+    margin-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    max-height: fit-content;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 21px;
+}
+.item-news-description {
+    margin-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    max-height: fit-content;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    font-family: "SF UI Display Light", sans-serif;
+    font-size: 13px;
+    color: #b8b8b8;
+}
+
+.block-news-end {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d1d1d1;
+    text-align: center;
+}
+
+.block-history-title {
+    padding: 12px 20px 20px 20px;
+}
+
+.history-title {
+    float: left;
+    font-size: 19px;
+    font-family: "SF UI Display Semibold", sans-serif;
+    color: #fff;
+}
+
+.history-settings:after {
+    cursor: pointer;
+    float: right;
+    color: #fff;
+    font-size: 19px;
+    content: '\2807';
+}
+
+.transaction-search {
+
+}
+
+.history-statistic {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.statistic {
+    cursor: pointer;
+    margin-top: 7px;
+    border: 1px solid rgba(211, 211, 211, 0.1);
+    color: #fff;
+    width: 45%;
+    height: 80px;
+    background: rgba(115, 117, 117, 0.4);
+    border-radius: 10px;
+}
+
+.modal.statistic {
+    cursor: default;
+}
+
+.statistic.expenses {
+    margin-left: 15px;
+}
+
+.statistic.receipts {
+    margin-right: 15px;
+}
+
+.statistic .title {
+    overflow: hidden;
+    display: -webkit-box;
+    max-height: fit-content;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-family: 'SF UI Display Medium', sans-serif;
+    padding: 13px 13px 5px;
+    font-size: 14px;
+}
+
+.statistic .total {
+    font-family: 'SF UI Display Bold', sans-serif;
+    font-size: 16px;
+    padding: 0 13px 13px;
+}
+
+.statistic .line {
+    margin: auto;
+    height: 7px;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.statistic.expenses .line {
+    background-color: rgb(244, 86, 86);
+}
+
+.statistic.receipts .line {
+    background-color: rgb(17, 205, 77);
+}
+
+.block-transactions {
+    margin: 15px 10px 0;
+}
+
+.block-transaction {
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: rgba(115, 117, 117, 0.4);
+    border-radius: 17px;
+    margin-bottom: 10px;
+}
+
+.block-transaction .transaction-image {
+    padding: 7px;
+    background-color: rgba(120, 120, 120, 0.6);
+    border-radius: 17px;
+    margin-left: 10px;
+    display: flex;
+    vertical-align: middle;
+    line-height: normal;
+    height: 30px;
+    width: 30px;
+}
+
+.block-transaction .transaction {
+    width: 100%;
+    display: flex;
+    max-height: 110px;
+    vertical-align: middle;
+    align-items: center;
+}
+.transaction .transaction-info {
+    line-height: normal;
+    display: block;
+    color: #fff;
+    margin-left: 6px;
+    padding: 5px;
+}
+.transaction-info .transaction-name {
+    overflow: hidden;
+    display: -webkit-box;
+    max-height: fit-content;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: fit-content;
+    max-width: 100px;
+    font-size: 17px;
+    font-family: 'SF UI Display Bold', sans-serif;
+}
+
+.transaction-info .transaction-description {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #cccccc;
+    font-family: 'SF UI Display Light', sans-serif;
+}
+
+.transaction-paid {
+    margin-left: auto;
+    margin-right: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'SF UI Display Medium', sans-serif;
+}
+
+.transaction-paid.receipt {
+    color: rgb(17, 205, 77);
+}
+
+.transaction-info .transaction-time {
+    color: #a1a1a1;
+    margin-top: 4px;
+    font-size: 12px;
+    font-family: 'SF UI Display Light', sans-serif;
+}
+
+.no-support-device {
+    z-index: 9020;
+    min-height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-support-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.no-support-message {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+    font-family: 'SF UI Display Black', sans-serif;
+}
+
+.no-support-message img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.block-navigation {
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px 15px 0 0;
+    border-top: 1px solid rgba(115, 117, 117);
+    background: rgb(30, 34, 37);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 1001;
+    bottom: 0;
+}
+
+.nav-nav {
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+}
+
+.nav-nav img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-nav .nav-description {
+    margin-top: 1px;
+    text-align: center;
+    font-family: "SF UI Display Bold", sans-serif;
+    display: block;
+    font-size: 11px;
+}
+
+.block-navigation .active {
+    filter: invert(75%) sepia(71%) saturate(380%) hue-rotate(43deg) brightness(300%) contrast(87%);
+}
+
+.block-navigation img#nav-home {
+    margin-left: 20px;
+}
+
+.block-navigation img#nav-settings {
+    margin-right: 20px;
+}
+
+.show {
+    display: block;
+}
+.hide_drop {
+    animation: hide_content 0.2s ease;
+}
+
+@keyframes show_content {
+    0% {
+        display: none;
+        max-height: 0;
+    }
+    100% {
+        display: block;
+        max-height: 175px;
+    }
+}
+@keyframes hide_content {
+    0% {
+        display: block;
+        max-height: 175px;
+    }
+    100% {
+        display: none;
+        max-height: 0;
+    }
+}
+
+.search-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+}
+.search-block input {
+    padding: 11px;
+    align-self: center;
+    width: 87%;
+    height: auto;
+    font-family: 'SF UI Display Medium', sans-serif;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: rgba(120, 120, 120, 0.6);
+    color: #fff;
+    border: 0;
+
+}
+.search-block input::placeholder {
+    color: #bdbdbd;
+}
+*:focus {
+    outline: none;
+}
+.block-transfer-title {
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: "SF UI Display Black", sans-serif;
+    color: #fff;
+}
+.transfer-contacts {
+}
+.transfer-title {
+    margin-left: 15px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "SF UI Display Black", sans-serif;
+}
+.contact-add {
+    cursor: pointer;
+    background-image:
+            radial-gradient(49% 81% at 45% 47%, #767750 2%, #0000 98%),
+            radial-gradient(113% 91% at 17% -2%, #6d855c 4%, #6a7e5c 99%),
+            radial-gradient(142% 91% at 83% 7%, #747c4e 1%, #808080 100%),
+            radial-gradient(142% 91% at -6% 74%, #848e41 1%, #717a3f 96%);
+    border-radius: 40%;
+    padding: 7px 7px;
+    margin-right: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-add img {
+    height: 20px;
+    width: 20px;
+}
+.transfer-list {
+    margin-top: 15px;
+    display: block;
+}
+.transfer-contact {
+    cursor: pointer;
+    margin: 10px auto auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    border: 1px solid rgba(115, 117, 117, 0.55);
+    border-radius: 15px;
+    background-color: rgb(106, 126, 92);
+    padding: 10px 6px 10px 12px;
+    display: flex;
+}
+.transfer-contact .contact-send {
+    margin-right: 10px;
+    width: 20px !important;
+    height: 20px !important;
+}
+.contact-about {
+    align-items: center;
+    display: flex;
+}
+.contact-about img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.contact-about .contact-name {
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: "SF UI Display Bold", sans-serif;
+    color: #ffffff;
+}
+.transfer-list-end {
+    align-self: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d1d1d1;
+    max-width: 80%;
+    text-align: center;
+}
+.modal {
+    overflow: hidden;
+    outline: 15px transparent;
+    outline-offset: -15px;
+    z-index: 9010;
+    position: fixed;
+    height: 92%;
+    width: 100vw;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    border-top: 1px solid rgba(115, 117, 117);
+    background: rgba(46, 49, 54, 0.93);
+    color: #fff;
+    -webkit-animation: show_modal 0.25s ease-in running;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform-origin: bottom;
+
+}
+.modal .swiper {
+    z-index: 9011;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: transparent;
+    border-radius: 40px 40px 0 0;
+}
+.modal .swiper .line {
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 3px;
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.modal .flex {
+    padding: 15px;
+    align-items: center;
+}
+.modal.transaction {
+
+}
+.modal.transaction .flex .time {
+    margin-top: 20px;
+    font-size: 19px;
+    font-family: "SF UI Display Medium", sans-serif;
+}
+.modal.transaction .flex .image {
+    margin-top: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 35%;
+    padding: 14px;
+}
+.modal.transaction .flex .paid {
+    font-family: "SF UI Display Bold", sans-serif;
+    font-size: 37px;
+    margin-top: 10px;
+}
+.modal.transaction .flex .name {
+    margin-top: 5px;
+    font-size: 19px;
+    font-family: "SF UI Display Medium", sans-serif;
+}
+.modal.transaction .description {
+    position: relative;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    max-height: 98%;
+    height: 60%;
+    padding: 0 20px 45px;
+    border-top: 1px solid rgba(115, 117, 117);
+}
+.modal.transaction .description .title {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+.modal.transaction .description .t_mtd {
+    margin-top: 20px;
+}
+.modal.transaction .description .t_mtd .t_title {
+    color: #a1a1a1;
+    font-size: 14px;
+    font-family: "SF UI Display Light", sans-serif;
+    margin-bottom: 3px;
+}
+.modal.transaction .description .t_mtd .t_desc {
+    font-family: "SF UI Display Semibold", sans-serif;
+    font-size: 16px;
+    border-bottom: 1px #515151 dashed;
+    width: calc(100% - 40px);
+}
+
+.block-new-contact-description {
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0 20px 45px;
+    border-top: 1px solid rgba(115, 117, 117);
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.block-new-contact-description .title {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+.block-new-contact-description .t_mtd {
+    margin-top: 20px;
+}
+.block-new-contact-description .t_mtd .t_title {
+    color: #a1a1a1;
+    font-size: 14px;
+    font-family: "SF UI Display Light", sans-serif;
+    margin-bottom: 3px;
+}
+.block-new-contact-description .t_mtd .t_desc {
+    font-family: "SF UI Display Semibold", sans-serif;
+    font-size: 16px;
+    border-bottom: 1px #515151 dashed;
+}
+
+.wrapword {
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -webkit-pre-wrap;          /* Chrome & Safari */
+    white-space: -pre-wrap;                 /* Opera 4-6 */
+    white-space: -o-pre-wrap;               /* Opera 7 */
+    white-space: pre-wrap;                  /* CSS3 */
+    word-wrap: break-word;                  /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
+}
+
+.modal.statistic .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    text-align: center;
+    z-index: 1001;
+}
+.modal.statistic .flex .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: "SF UI Display Semibold", sans-serif;
+}
+.modal.statistic .flex .amount {
+    font-size: 27px;
+    margin-bottom: 30px;
+    font-family: "SF UI Display Heavy", sans-serif;
+}
+.modal.statistic .flex .center-canvas {
+    height: 100%;
+}
+.modal.statistic .flex .empty_img {
+    height: 200px;
+    width: 200px;
+}
+.modal.statistic .flex .empty_text {
+    color: #cdcdcd;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "SF UI Display Semibold", sans-serif;
+}
+.modal.news .flex .image{
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 70%;
+    height: 200px;
+}
+.modal.news .flex .title {
+    font-family: "SF UI Display Black", sans-serif;
+    font-size: 27px;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.modal.news .description {
+    color: #ececec;
+    font-family: "SF UI Display Regular", sans-serif;
+    font-size: 17px;
+    text-indent: 15px;
+    padding: 0 15px 45px;
+}
+.modal.news .description .br {
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.hide {
+    -webkit-animation: hide_modal 0.25s ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes show_modal {
+    0% {
+        transform: translateY(1000px);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes hide_modal {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(1000px);
+        opacity: 0.2;
+    }
+}
+
+.statistic_chart {
+    max-height: 260px;
+    max-width: 260px;
+}
+
+.block-rtl-animate {
+    -webkit-animation: block_rtl 0.25s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.block-ltr-animate {
+    -webkit-animation: block_ltr 0.25s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes block_rtl {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes block_ltr {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.block-new-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+.block-new-contact-title {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "SF UI Display Black", sans-serif;
+}
+.new-contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    height: 70px;
+    width: 80%;
+    line-height: 47px;
+}
+.new-contact-input {
+    cursor: text;
+    background: transparent;
+    color: #787878;
+    width: inherit;
+    height: 45px;
+    font-family: "SF UI Display Semibold", sans-serif;
+    border: 1px solid #787878;
+    border-radius: 7px;
+    padding-left: 10px;
+    font-size: 15px;
+    position: absolute;
+    align-self: center;
+    margin: auto;
+}
+.new-contact-label {
+    cursor: text;
+    transition: 0.2s ease;
+    font-size: 15px;
+    font-family: "SF UI Display Semibold", sans-serif;
+    align-self: start;
+    display: block;
+    color: #787878;
+    z-index: 1111;
+}
+.new-contact-input:focus,
+.new-contact-input:valid {
+    border: 1px solid #fff;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+}
+.new-contact-input:focus + .new-contact-label,
+.new-contact-input:valid + .new-contact-label {
+    background: rgb(30, 34, 37);
+    padding: 0 4px;
+    color: #fff;
+    transform: translate(-12px, -24px) scale(0.78);
+}
+.new-contact-input:disabled + .new-contact-label {
+    cursor: default;
+    background: rgb(30, 34, 37);
+    padding: 0 4px;
+    color: #787878;
+    transform: translate(-12px, -24px) scale(0.78);
+}
+.new-contact-input:disabled {
+    cursor: default;
+}
+.new-contact-button {
+    width: calc(80% + 12px);
+    height: 45px;
+    background-color: #157347;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-family: "SF UI Display Medium", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cancel-contact-button {
+    width: calc(80% + 12px);
+    height: 45px;
+    background-color: #9f3c3c;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-family: "SF UI Display Medium", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.cancel-contact-button:disabled {
+    background-color: rgba(159, 60, 60, 0.5);
+    color: #787878;
+}
+.notify-input-field {
+    display: inline-block;
+    color: #ff0000;
+    font-family: "SF UI Display Semibold", sans-serif;
+    font-size: 14px;
+    transition: .2s all ease;
+    z-index: 394847893432423;
+    max-width: 80%;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.notify-input-field-2 {
+    display: inline-block;
+    color: #959595;
+    font-family: "SF UI Display Semibold", sans-serif;
+    font-size: 14px;
+    transition: .2s all ease;
+    z-index: 394847893432423;
+    max-width: 80%;
+    margin-bottom: 20px;
+    font-weight: 100;
+    margin-top: -15px;
+}
+.button--loading::after {
+    font-family: 'Glyphter', serif;
+    content: "\0041";
+    display: block;
+    animation: button-loading-spinner 1s linear infinite;
+}
+.button--loading .new-contact-button-text {
+    visibility: hidden;
+    opacity: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+@keyframes button-loading-spinner {
+    from {
+        --webkit-transform: rotate(0deg);
+        --o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        --webkit-transform: rotate(360deg);
+        --o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#tr_sc_title {
+    margin-top: calc(70%);
+    margin-bottom: 10px;
+}
+#transfer_success {
+    justify-content: normal;
+    overflow: hidden
+}
+#tr_sc_amount, #tr_sc_desc, #transfer_success_button, #tr_sc_title {
+    transition: 1s ease all;
+}
+
+@media only screen and (max-width: 400px) {
+    #tr_sc_title {
+        margin-top: calc(70% + 12px);
+        margin-bottom: 10px
+    }
+}
+@media only screen and (max-width: 500px) and (min-width: 460px) {
+    #tr_sc_title {
+        margin-top: calc(60%);
+        margin-bottom: 10px
+    }
+}
+
+.circle{fill:none;stroke:#157347;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+.circle-dash{fill:none;stroke:#157347;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+.check{fill:none;stroke:#157347;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.check-dash{fill:none;stroke:#157347;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+.check {
+    stroke-dasharray: 60 100;
+    animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+    -webkit-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+    -moz-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+    -o-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+    opacity: 0;
+}
+
+@-webkit-keyframes check {
+    from {stroke-dashoffset: 60;
+        opacity: 1;}
+
+    to {stroke-dashoffset: 00;
+        opacity: 1;}
+}
+
+@-moz-keyframes check {
+    from {stroke-dashoffset: 60;
+        opacity: 1;}
+
+    to {stroke-dashoffset: 00;
+        opacity: 1;}
+}
+
+@keyframes check {
+    from {stroke-dashoffset: 60;
+        opacity: 1;}
+
+    to {stroke-dashoffset: 00;
+        opacity: 1;}
+}
+
+.check-dash {
+    stroke-dasharray: 10 100;
+    animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+    -webkit-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+    -moz-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+    -o-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+}
+
+@-webkit-keyframes check-dash {
+    from {stroke-dashoffset: 120;}
+    to {stroke-dashoffset: 45;}
+}
+
+@-moz-keyframes check-dash {
+    from {stroke-dashoffset: 120;}
+    to {stroke-dashoffset: 45;}
+}
+
+@keyframes check-dash {
+    from {stroke-dashoffset: 120;}
+    to {stroke-dashoffset: 45;}
+}
+
+.circle {
+    stroke-dasharray: 300 300;
+    animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+    -webkit-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+    -moz-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+    -o-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+@-webkit-keyframes circle {
+    from {stroke-dashoffset:300;
+        opacity: 1;}
+    to {stroke-dashoffset:0;
+        opacity: 1;}
+}
+
+@-moz-keyframes circle {
+    from {stroke-dashoffset:300;
+        opacity: 1;}
+    to {stroke-dashoffset:0;
+        opacity: 1;}
+}
+
+@keyframes circle {
+    from {stroke-dashoffset:300;
+        opacity: 1;}
+    to {stroke-dashoffset:0;
+        opacity: 1;}
+}
+
+.circle-dash {
+    stroke-dasharray: 10 300;
+    animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+    -webkit-animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+    -moz-animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+    -o-animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+    opacity: 0;
+}
+
+@-webkit-keyframes circledash {
+    from {stroke-dashoffset:320;
+        opacity: 1;}
+    to {stroke-dashoffset: 20;
+        opacity: 1;}
+}
+
+@-moz-keyframes circledash {
+    from {stroke-dashoffset:320;
+        opacity: 1;}
+    to {stroke-dashoffset: 20;
+        opacity: 1;}
+}
+
+@keyframes circledash {
+    from {stroke-dashoffset:320;
+        opacity: 1;}
+    to {stroke-dashoffset: 20;
+        opacity: 1;}
+}
+
+@media only screen and (max-width: 371px)
+{
+    .block-main {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .block-money {
+        font-size: 40px;
+    }
+    .block-hello {
+        font-size: 20px;
+    }
+    .block-notify {
+        font-size: 12px;
+    }
+    .block-currency {
+        font-size: 14px;
+    }
+    .dropdown-content {
+        width: 81.13px;
+    }
+
+    .dropdown-content .block-currency-dropdown {
+        font-size: 12px;
+    }
+    .currency-image {
+        max-width: 15px;
+        max-height: 15px;
+    }
+    .block-money-notify {
+        font-size: 12px;
+    }
+    .block-transaction .transaction-image {
+        max-height: 30px;
+        max-width: 30px;
+    }
+    .block-transaction {
+        height: 80px;
+        line-height: 80px;
+    }
+    .transaction-info .transaction-name {
+        font-size: 15px;
+    }
+
+    .transaction-info .transaction-description {
+        font-size: 13px;
+    }
+
+    .transaction-info .transaction-time {
+        font-size: 11px;
+    }
+
+    .block-navigation {
+        height: 40px;
+    }
+
+    .block-navigation img {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 25px;
+        height: 25px;
+    }
+}

@@ -1,0 +1,31 @@
+<div class="transfer-block">
+    <div style="display: flex; justify-content: center;">
+        <div class="block-transfer-title">Переводы</div>
+    </div>
+    <div class="search-block">
+        <input id="send-id" placeholder="Перевод по ID кошелька" style="cursor: pointer" readonly>
+    </div>
+    <div class="transfer-contacts" style="display: flex; justify-content: space-between">
+        <div class="transfer-title">Контакты</div>
+        <div class="contact-add" id="button_contact_add">
+            <img src="src/svg/user-plus.svg">
+        </div>
+    </div>
+    <div class="search-block">
+        <input id="contact_search" placeholder="Поиск контакта" type="text" required>
+    </div>
+    <div class="transfer-list" id="contacts_list">
+        {% for contact_info in contacts %}
+            <div class="transfer-contact" id_contact="{{ contact_info.id }}">
+                <div class="contact-about">
+                    <img src="{{ contact_info.image_src }}" alt="{{ contact_info.name|escape }}">
+                    <div class="contact-name">{{ contact_info.name|escape }}</div>
+                </div>
+                <img class="contact-send" src="src/svg/arrow-right.svg">
+            </div>
+        {% endfor %}
+    </div>
+    <div style="display: flex !important; justify-content: center !important" id="contacts_end_text">
+        <div class="transfer-list-end">{{ stop_text }}</div>
+    </div>
+</div>
