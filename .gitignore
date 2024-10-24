@@ -1,3 +1,4 @@
 /vendor/
 /server/resources/twig_cache/
 /server/socket/Socket.log
+/wallet_fix.zip
