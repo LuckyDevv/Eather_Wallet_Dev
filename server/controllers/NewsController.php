@@ -17,7 +17,7 @@ class NewsController extends Controller
         if (count($news) > 0) {
             try {
                 return [
-                    "list" => $this->twig->render("news.twig", ["news" => $news]),
+                    "list" => $this->twig->render("news.twig", ["news" => array_reverse($news)]),
                     "stop_text" => 'На этом новости и предложения закончились...'
                 ];
             }catch (LoaderError|RuntimeError|SyntaxError $e) {

@@ -2,6 +2,8 @@ var socket_reconnection_attempt = 0; var socket_connected = false;
 var socket = null;
 var cached_receipts_chart = null;
 var cached_expenses_chart = null;
+var socket_check = false;
+var start_ping = null;
 function openSocket() {
     socket = new WebSocket('ws://localhost:8080');
     console.log('Attempt №' +socket_reconnection_attempt+' to connect to WebSocket server...');
@@ -11,6 +13,9 @@ function openSocket() {
             socket.send(JSON.stringify({"type": "auth", "session_id": getCookie("session_id"), "uuid": new DeviceUUID().get()}));
             console.log('Connected to server.');
             socket_connected = true;
+            if (socket_check) {
+                $('#main_preloader').fadeOut().end().delay(400).fadeOut('slow');
+            }
         }
         socket.onmessage = function(event) {
             handleSocketMessage(event.data);
@@ -19,6 +24,8 @@ function openSocket() {
             console.log("Cannot establish connection!");
         }
         socket.onclose = function () {
+            $('#main_preloader').fadeIn().end().delay(400).fadeIn('slow');
+            socket_check = true;
             socket = null;
             socket_connected = false;
             openSocket();
@@ -43,6 +50,14 @@ function handleSocketMessage(data) {
 
 function handleSocketResponse(data) {
     switch (data.response.code) {
+        case 1190:
+            var ping = 0;
+            if (!empty(start_ping)) {
+                ping = Math.round(performance.now() - start_ping);
+                start_ping = null;
+            }
+            console.log("Current ping to server: " + ping + " ms");
+            break;
         case 1:
             console.log(data.response.message);
             break;
@@ -147,12 +162,22 @@ function handleSocketResponse(data) {
                 cached_receipts_chart = "null";
             }
             break;
+        case 12:
+            document.getElementById("history-block").innerHTML = data.response.message;
+            $('#mini_preloader_1').fadeOut().end().delay(400).fadeOut('slow');
+            history_parsed = true;
+            setHistoryEvents();
+            break;
     }
 }
 
 function handleSocketError(data) {
     console.log(data);
     switch (data.error.code) {
+        case 3:
+            setCookie("session_id", "", -1);
+            location.href = "auth/";
+            break;
         /*
         TRANSFER (SEND MONEY) ERROR
          */
@@ -182,3 +207,14 @@ function handleSocketError(data) {
             break;
     }
 }
+
+
+// PING SERVER EVERY 50 SECONDS
+setInterval(function () {
+    if (socket_connected) {
+        start_ping = performance.now();
+        socket.send(JSON.stringify({
+            "type": "ping"
+        }));
+    }
+}, 50000);

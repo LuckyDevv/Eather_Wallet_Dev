@@ -28,9 +28,6 @@ window.onload = () => {
         var checkSocket = setInterval(function () {
             if (all_loaded && socket_connected) {
                 $('#main_preloader').fadeOut().end().delay(400).fadeOut('slow');
-                setTimeout(function () {
-                    $('#main_preloader').remove();
-                }, 400);
                 clearInterval(checkSocket);
             }
         }, 500);

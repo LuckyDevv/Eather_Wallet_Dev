@@ -204,34 +204,12 @@ function setBlock(id)
             last_nav = 'swap';
             break;
         case 'nav-history':
+            showHistory();
             if (!history_parsed) {
-                $.post("server/api/history.php", {"type": "all", "session_id": getCookie("session_id"), "user_uuid": new DeviceUUID().get()}, function (data){
-                    var data_parsed = $.parseJSON(data);
-                    if (!empty(data_parsed.response)) {
-                        if (data_parsed.response.code === 2) {
-                            document.getElementById("history-block").innerHTML = data_parsed.response.message;
-                            history_parsed = true;
-                            setHistoryEvents();
-                        }
-                    }
-                });
+                socket.send(JSON.stringify({
+                    "type": "history"
+                }));
             }
-            document.getElementById('history-block').removeAttribute('hidden');
-            document.getElementById('history-block').classList.add('block-animate');
-            if (last_nav !== 'history') {
-                if (last_nav === 'home' || last_nav === 'swap') {
-                    document.getElementById('history-block').classList.remove('block-ltr-animate');
-                    document.getElementById('history-block').classList.add('block-rtl-animate');
-                }else{
-                    document.getElementById('history-block').classList.add('block-ltr-animate');
-                    document.getElementById('history-block').classList.remove('block-rtl-animate');
-                }
-            }
-            document.getElementById('main-block').setAttribute('hidden', 'hidden');
-            document.getElementById('news-block').setAttribute('hidden', 'hidden');
-            document.getElementById('swap-block').setAttribute('hidden', 'hidden');
-            document.getElementById('notify-block').setAttribute('hidden', 'hidden');
-            last_nav = 'history';
             break;
         case 'nav-bell':
             document.getElementById('notify-block').removeAttribute('hidden');
@@ -254,6 +232,25 @@ function setBlock(id)
             document.getElementById('notify-block').setAttribute('hidden', 'hidden');
             break;
     }
+    updateNavigationPanel();
+}
+function showHistory(){
+    document.getElementById('history-block').removeAttribute('hidden');
+    document.getElementById('history-block').classList.add('block-animate');
+    if (last_nav !== 'history') {
+        if (last_nav === 'home' || last_nav === 'swap') {
+            document.getElementById('history-block').classList.remove('block-ltr-animate');
+            document.getElementById('history-block').classList.add('block-rtl-animate');
+        }else{
+            document.getElementById('history-block').classList.add('block-ltr-animate');
+            document.getElementById('history-block').classList.remove('block-rtl-animate');
+        }
+    }
+    document.getElementById('main-block').setAttribute('hidden', 'hidden');
+    document.getElementById('news-block').setAttribute('hidden', 'hidden');
+    document.getElementById('swap-block').setAttribute('hidden', 'hidden');
+    document.getElementById('notify-block').setAttribute('hidden', 'hidden');
+    last_nav = 'history';
     updateNavigationPanel();
 }
 $('.swiper').click(function (){

@@ -93,7 +93,7 @@ $('#transfer_step2_button').click(function (){
         return;
     }
     if (real_amount < 1) {
-        sendNotifyField("transfer_step2_amount", "Нельзя перевести меньше 5 руб.!");
+        sendNotifyField("transfer_step2_amount", "Нельзя перевести меньше 1 руб.!");
         return;
     }
     if (comment.length > 255) {

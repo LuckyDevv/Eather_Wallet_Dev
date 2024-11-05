@@ -6,7 +6,6 @@ use Ratchet\Http\HttpServer;
 use Ratchet\Server\IoServer;
 use Ratchet\WebSocket\WsServer;
 use socket\SocketHandler;
-
 $server = IoServer::factory(
     new HttpServer(
         new WsServer(

@@ -16,6 +16,7 @@ class AccountsDB extends DB
             parent::__construct();
             $this->db->query("
             CREATE TABLE IF NOT EXISTS `accounts` (
+                `email` VARCHAR(255) NOT NULL,
                 `account_id` BIGINT NOT NULL, 
                 `name` TEXT NOT NULL, 
                 `login` TEXT NOT NULL, 
@@ -25,7 +26,7 @@ class AccountsDB extends DB
                 `contact_limit` INT NOT NULL, 
                 `disable_ads` BOOLEAN NOT NULL,
                 `create_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                 PRIMARY KEY (`account_id`)
+                 PRIMARY KEY (`account_id`, `email`)
             );");
         }catch (\PDOException $e) {
             $this->createLog("AccountsDB", $e);
@@ -33,7 +34,7 @@ class AccountsDB extends DB
         }
     }
 
-    public function account_create(string $name, string $password): int
+    public function account_create(string $email, string $name, string $password): int
     {
         if ($this->die) return -4;
         try {
@@ -52,8 +53,9 @@ class AccountsDB extends DB
 
             $prepare_stmt = $this->db->prepare("
 INSERT INTO `accounts`
-(`account_id`, `name`, `login`, `password`, `image_src`, `balance`, `contact_limit`, `disable_ads`, `create_date`)
-VALUES (:id, :name, :login, :password, :image_src, 0.0, :contact_limit, :disable_ads, DEFAULT);");
+(`email`, `account_id`, `name`, `login`, `password`, `image_src`, `balance`, `contact_limit`, `disable_ads`, `create_date`)
+VALUES (:email, :id, :name, :login, :password, :image_src, 0.0, :contact_limit, :disable_ads, DEFAULT);");
+            $prepare_stmt->bindValue(":email", $email);
             $prepare_stmt->bindValue(':id', $id, PDO::PARAM_INT);
             $prepare_stmt->bindValue(':name', $name);
             $prepare_stmt->bindValue(':login', 'none');
@@ -84,6 +86,20 @@ VALUES (:id, :name, :login, :password, :image_src, 0.0, :contact_limit, :disable
             }else return 1;
         }else return 2;
     }
+    public function account_auth_email(string $email, string $password, bool $encrypt=false): int {
+        $prepare = $this->db->prepare("SELECT `password`,`account_id` FROM `accounts` WHERE `email`=:email;");
+        $prepare->bindValue(':email', $email, PDO::PARAM_INT);
+        $prepare->execute();
+        $result = $prepare->fetch(PDO::FETCH_ASSOC);
+        if (isset($result['password'])) {
+            if ($encrypt) {
+                $password = hash('sha3-512', $password);
+            }
+            if ($result['password'] == $password) {
+                return $result['account_id'];
+            }else return -1;
+        }else return -2;
+    }
     public function account_auth_login(string $login, string $password, bool $encrypt=true): int
     {
         $prepare = $this->db->prepare("SELECT `password` FROM `accounts` WHERE `login`=:login;");
@@ -101,10 +117,18 @@ VALUES (:id, :name, :login, :password, :image_src, 0.0, :contact_limit, :disable
     }
     public function account_exists_id(int $id): bool
     {
-        $prepare = $this->db->prepare("SELECT * FROM `accounts` WHERE `account_id`=:id;");
+        $prepare = $this->db->prepare("SELECT `account_id` FROM `accounts` WHERE `account_id`=:id;");
         $prepare->bindValue(':id', $id, PDO::PARAM_INT);
         $prepare->execute();
-        return (isset($prepare->fetch(PDO::FETCH_ASSOC)['account_id']));
+        $fetch = $prepare->fetch(PDO::FETCH_ASSOC);
+        return (isset($fetch["account_id"]) && $fetch["account_id"] == $id);
+    }
+    public function account_exists_email(string $email): bool {
+        $prepare = $this->db->prepare("SELECT `email` FROM `accounts` WHERE `email`=:email;");
+        $prepare->bindValue(':email', $email, PDO::PARAM_INT);
+        $prepare->execute();
+        $fetch = $prepare->fetch(PDO::FETCH_ASSOC);
+        return (isset($fetch["email"]) && $fetch["email"] == $email);
     }
 
     public function name_get(int $id): ?string {
@@ -112,6 +136,18 @@ VALUES (:id, :name, :login, :password, :image_src, 0.0, :contact_limit, :disable
         try {
             $prepare = $this->db->prepare("SELECT `name` FROM `accounts` WHERE `account_id`=:id;");
             $prepare->bindValue(':id', $id, PDO::PARAM_INT);
+            $prepare->execute();
+            return $prepare->fetch(PDO::FETCH_ASSOC)['name'] ?? null;
+        }catch(PDOException $e) {
+            $this->createLog("AccountsDB", $e);
+        }
+        return null;
+    }
+    public function name_get_email(string $email): ?string {
+        if ($this->die) return null;
+        try {
+            $prepare = $this->db->prepare("SELECT `name` FROM `accounts` WHERE `email`=:email;");
+            $prepare->bindValue(':email', $email, PDO::PARAM_INT);
             $prepare->execute();
             return $prepare->fetch(PDO::FETCH_ASSOC)['name'] ?? null;
         }catch(PDOException $e) {

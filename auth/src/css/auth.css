@@ -20,7 +20,7 @@
 }
 html, body {
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     padding: 0;
     margin: 0;
     height: 100%;
@@ -180,14 +180,15 @@ body {
     color: #ff0000;
     font-family: "SF UI Display Semibold", sans-serif;
     font-size: 14px;
-    float: right;
     transition: .2s all ease;
     z-index: 394847893432423;
-    max-width: 48%;
+    float: right;
+    max-width: 100%;
+    margin-bottom: 15px;
 }
 #reg_form .notify {
-    margin-top: 5px;
-    margin-bottom: -10px;
+    max-width: 100%;
+    margin-bottom: -5px;
     z-index: 394847893432423;
 }
 input::-webkit-outer-spin-button,

@@ -41,13 +41,12 @@
         <form class="form" autocomplete="off">
             <t class="notify" id="notify_id"></t>
             <div class="group-form">
-                <input class="auth-input" id="auth_input_id_text"  autocomplete="enter-id" required type="number">
-                <label class="auth-label" for="auth_input_id_text">Введите ID/Логин кошелька</label>
+                <input class="auth-input" id="auth_input_id_text"  autocomplete="enter-id" required type="text">
+                <label class="auth-label" for="auth_input_id_text">Введите вашу почту</label>
             </div>
         </form>
         <div class="auth-show-pass-group" id="auth_tips_id">
             <t id="auth_reg_button" style="cursor: pointer">Зарегистрироваться</t>
-            <t id="auth_rem_id" style="cursor: pointer">Забыли свой ID?</t>
         </div>
         <button class="auth-button-next" id="auth_button_id_next" type="button">
             <center><span class="auth-button-text" id="auth_id_next_text">Продолжить</span></center>
@@ -79,6 +78,11 @@
     <div class="auth-form" id="reg_form">
         <div class="auth-text-1">Регистрация в EATHER Wallet</div>
         <form class="form" autocomplete="off">
+            <t class="notify" id="notify_email"></t>
+            <div class="group-form">
+                <input class="auth-input" id="reg_input_email" autocomplete="new-email" required type="text">
+                <label class="auth-label" for="reg_input_email">Введите почту</label>
+            </div>
             <t class="notify" id="notify_name"></t>
             <div class="group-form">
                 <input class="auth-input" id="reg_input_name" autocomplete="new-name" required type="text">
@@ -104,6 +108,42 @@
         </button>
     </div>
 </div>
+<div class="container-main" id="content_confirm_reg" style="display: none">
+    <div class="auth-form" id="confirm_form">
+        <div class="auth-text-1">Введите код подтверждения</div>
+        <form class="form" autocomplete="off">
+            <t class="notify" id="notify_code_reg" style="color: #808080;">Мы отправили код подтверждения на вашу почту. Если не видите письмо, проверьте "Спам"</t>
+            <div class="group-form">
+                <input class="auth-input" id="reg_input_code_text" autocomplete="enter-code" required type="number">
+                <label class="auth-label" for="reg_input_code_text">Введите код подтверждения</label>
+            </div>
+        </form>
+        <button class="auth-button-next" id="reg_button_code_next" type="button">
+            <center><span class="auth-button-text" id="reg_code_next_text">Продолжить</span></center>
+        </button>
+        <button class="auth-button-prev" id="reg_button_code_prev" type="button">
+            <center><span class="auth-button-text">Назад</span></center>
+        </button>
+    </div>
+</div>
+<div class="container-main" id="content_confirm_auth" style="display: none">
+    <div class="auth-form" id="confirm_form_auth">
+        <div class="auth-text-1">Введите код подтверждения</div>
+        <form class="form" autocomplete="off">
+            <t class="notify" id="notify_code_auth" style="color: #808080;">Мы отправили код подтверждения на вашу почту. Если не видите письмо, проверьте "Спам"</t>
+            <div class="group-form">
+                <input class="auth-input" id="auth_input_code_text" autocomplete="enter-code" required type="number">
+                <label class="auth-label" for="auth_input_code_text">Введите код подтверждения</label>
+            </div>
+        </form>
+        <button class="auth-button-next" id="auth_button_code_next" type="button">
+            <center><span class="auth-button-text" id="auth_code_next_text">Продолжить</span></center>
+        </button>
+        <button class="auth-button-prev" id="auth_button_code_prev" type="button">
+            <center><span class="auth-button-text">Назад</span></center>
+        </button>
+    </div>
+</div>
 
 <div class="no-support-device" hidden="hidden" id="no-support" style="display: none;">
     <div class="no-support-container">
@@ -119,6 +159,7 @@
 <div id="js">
     <script src="../src/js/libs/jquery.min.js"></script>
     <script src="../src/js/libs/device-uuid.min.js"></script>
+    <script src="src/js/socket.js"></script>
     <script src="src/js/auth.js"></script>
 </div>
 </body>
