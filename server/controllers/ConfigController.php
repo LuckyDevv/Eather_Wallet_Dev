@@ -11,9 +11,9 @@ class ConfigController
     const int ENUM = 3;
     const int JSON_OPS = JSON_PRETTY_PRINT | JSON_BIGINT_AS_STRING | JSON_UNESCAPED_UNICODE;
     const array MYSQL_CONNECTION = [
-        'ip' => 'localhost',
-        'user' => 'root',
-        'password' => 'eather1192@How91',
+        'ip' => 'localhost', // Хост БД
+        'user' => 'root', // Пользователь БД
+        'password' => '', // Пароль от БД
     ];
     private int $type = ConfigController::DETECT;
     private array $formats = [
